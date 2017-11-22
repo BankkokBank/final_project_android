@@ -9,8 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
 import kmitl.bank58070041.finalproject.lazycafe.fragment.HomeFragment;
 import kmitl.bank58070041.finalproject.lazycafe.fragment.ProfileFragment;
