@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="kmitl.bank58070041.finalproject.lazycafe.BuyCoffee">
+    android:background="#cca668"
+    android:orientation="vertical"
+    tools:context=".controller.activity.BuyCoffee">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
 
+        <ImageView
+            android:id="@+id/blender"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/blender" />
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:id="@+id/ice"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/ice" />
+
+        <ImageView
+            android:id="@+id/hot"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/hot" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10">
+
+        <Button
+            android:onClick="btnNextClick"
+            android:layout_width="92dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="145dp"
+            android:text="next"
+            android:textColor="#fff" />
+    </LinearLayout>
+</LinearLayout>

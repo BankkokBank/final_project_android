@@ -1,4 +1,4 @@
-package kmitl.bank58070041.finalproject.lazycafe.fragment;
+package kmitl.bank58070041.finalproject.lazycafe.controller.fragment;
 
 
 import android.content.Intent;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import kmitl.bank58070041.finalproject.lazycafe.BuyCoffee;
+import kmitl.bank58070041.finalproject.lazycafe.controller.activity.BuyCoffee;
 import kmitl.bank58070041.finalproject.lazycafe.R;
 
 

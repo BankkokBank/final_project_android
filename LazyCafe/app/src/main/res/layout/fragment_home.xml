@@ -2,14 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="kmitl.bank58070041.finalproject.lazycafe.fragment.HomeFragment">
+    tools:context=".controller.fragment.HomeFragment">
 
     <Button
         android:id="@+id/buyCoffee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/go_coffee"
-
-        />
+        android:text="@string/go_coffee" />
 
 </FrameLayout>

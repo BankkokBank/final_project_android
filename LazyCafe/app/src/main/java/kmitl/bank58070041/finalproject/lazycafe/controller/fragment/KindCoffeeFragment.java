@@ -1,4 +1,4 @@
-package kmitl.bank58070041.finalproject.lazycafe.fragment;
+package kmitl.bank58070041.finalproject.lazycafe.controller.fragment;
 
 
 import android.os.Bundle;
@@ -9,14 +9,13 @@ import android.view.ViewGroup;
 
 import kmitl.bank58070041.finalproject.lazycafe.R;
 
-
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ProfileFragment extends Fragment {
+public class KindCoffeeFragment extends Fragment {
 
 
-    public ProfileFragment() {
+    public KindCoffeeFragment() {
         // Required empty public constructor
     }
 
@@ -25,7 +24,7 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        return inflater.inflate(R.layout.fragment_kind_coffee, container, false);
     }
 
 }

@@ -1,4 +1,4 @@
-package kmitl.bank58070041.finalproject.lazycafe;
+package kmitl.bank58070041.finalproject.lazycafe.controller.activity;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,9 +10,10 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 
-import kmitl.bank58070041.finalproject.lazycafe.fragment.HomeFragment;
-import kmitl.bank58070041.finalproject.lazycafe.fragment.ProfileFragment;
-import kmitl.bank58070041.finalproject.lazycafe.fragment.QueueFragment;
+import kmitl.bank58070041.finalproject.lazycafe.R;
+import kmitl.bank58070041.finalproject.lazycafe.controller.fragment.HomeFragment;
+import kmitl.bank58070041.finalproject.lazycafe.controller.fragment.ProfileFragment;
+import kmitl.bank58070041.finalproject.lazycafe.controller.fragment.QueueFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.frameLayout,new HomeFragment()).commit();
 
-    }
+         }
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {

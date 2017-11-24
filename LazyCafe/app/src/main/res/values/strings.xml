@@ -10,5 +10,10 @@
     <string name="login_with_facebook">Login With Facebook</string>
     <string name="facebook_app_id">740033442853953</string>
     <string name="fb_login_protocol_scheme">fb740033442853953</string>
+    <string name="cancel_login">Login Cancel</string>
+    <string name="error_login">Login Error</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

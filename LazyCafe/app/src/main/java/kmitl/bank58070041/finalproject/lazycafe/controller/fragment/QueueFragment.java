@@ -1,4 +1,4 @@
-package kmitl.bank58070041.finalproject.lazycafe.fragment;
+package kmitl.bank58070041.finalproject.lazycafe.controller.fragment;
 
 
 import android.os.Bundle;
