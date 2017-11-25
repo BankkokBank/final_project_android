@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import kmitl.bank58070041.finalproject.lazycafe.controller.activity.BuyCoffee;
+import kmitl.bank58070041.finalproject.lazycafe.controller.activity.TypeCoffeePage;
 import kmitl.bank58070041.finalproject.lazycafe.R;
 
 
@@ -32,7 +32,7 @@ public class HomeFragment extends Fragment{
         btnGoCoffee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), BuyCoffee.class);
+                Intent intent = new Intent(getActivity(), TypeCoffeePage.class);
                 startActivity(intent);
             }
         });

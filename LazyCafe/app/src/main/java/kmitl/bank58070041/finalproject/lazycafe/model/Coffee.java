@@ -1,5 +1,7 @@
 package kmitl.bank58070041.finalproject.lazycafe.model;
 
+import android.widget.EditText;
+
 /**
  * Created by Bankkok_Bank on 25/11/2560.
  */
@@ -31,4 +33,7 @@ public class Coffee {
     public void setKindCoffee(String kindCoffee) {
         this.kindCoffee = kindCoffee;
     }
+
+    public void coffeeChoose(String one){}
 }
+

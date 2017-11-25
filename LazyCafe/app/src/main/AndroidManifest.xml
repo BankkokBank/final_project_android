@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="kmitl.bank58070041.finalproject.lazycafe">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -19,15 +19,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <meta-data android:name="com.facebook.sdk.ApplicationId"
-                   android:value="@string/facebook_app_id"/>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
 
         <activity
-        android:name="com.facebook.FacebookActivity"
-        android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-        android:label="@string/app_name"
-        />
-
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
         <activity
             android:name="com.facebook.CustomTabActivity"
             android:exported="true">
@@ -40,25 +39,22 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".controller.activity.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"
-                    />
+                <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".controller.activity.BuyCoffee"
-                  android:screenOrientation="portrait"/>
+        <activity
+            android:name=".controller.activity.TypeCoffeePage"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".controller.activity.LoginActivity"
-    android:screenOrientation="portrait">
-
-    </activity>
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".controller.activity.KindCoffeepage"></activity>
     </application>
 
-    </manifest>
+</manifest>

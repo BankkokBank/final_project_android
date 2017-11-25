@@ -1,24 +1,25 @@
 package kmitl.bank58070041.finalproject.lazycafe.controller.activity;
 
+
+
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+
 import kmitl.bank58070041.finalproject.lazycafe.R;
-import kmitl.bank58070041.finalproject.lazycafe.controller.fragment.KindCoffeeFragment;
 import kmitl.bank58070041.finalproject.lazycafe.model.Coffee;
 
-public class BuyCoffee extends AppCompatActivity {
+public class TypeCoffeePage extends AppCompatActivity {
     private String type;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_buy_coffee);
+        setContentView(R.layout.activity_type_coffee);
         final ImageView blend = findViewById(R.id.blender);
         final ImageView ice = findViewById(R.id.ice);
         final ImageView hot = findViewById(R.id.hot);
@@ -56,10 +57,31 @@ public class BuyCoffee extends AppCompatActivity {
     }
 
     public void btnNextClick(View view) {
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.frameLayout,new KindCoffeeFragment()).commit();
         Coffee typeCoffee = new Coffee();
         typeCoffee.setType(type);
+        Intent intent = new Intent(TypeCoffeePage.this, KindCoffeepage.class);
+        intent.putExtra("typeCoffee",typeCoffee.getType());
+        startActivity(intent);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

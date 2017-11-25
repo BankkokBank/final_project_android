@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cca668"
+    tools:context="kmitl.bank58070041.finalproject.lazycafe.controller.activity.KindCoffeepage">
+
+    <ImageView
+        android:id="@+id/espresso"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/blender"
+        app:layout_constraintEnd_toStartOf="@+id/americano"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/americano"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/blender"
+        app:layout_constraintEnd_toStartOf="@+id/macchiato"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/macchiato"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/blender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cappuccino"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/blender"
+        app:layout_constraintEnd_toStartOf="@+id/flat_white"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/espresso" />
+
+    <ImageView
+        android:id="@+id/flat_white"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/blender"
+        app:layout_constraintEnd_toStartOf="@+id/mocha"
+        app:layout_constraintTop_toBottomOf="@+id/americano" />
+
+    <ImageView
+        android:id="@+id/mocha"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/blender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/macchiato" />
+
+    <ImageView
+        android:id="@+id/affogato"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/blender"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cappuccino"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <ImageView
+        android:id="@+id/latte"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/blender"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/latte_macchiato"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toEndOf="@+id/affogato"
+        app:layout_constraintTop_toBottomOf="@+id/flat_white"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <ImageView
+        android:id="@+id/latte_macchiato"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/blender"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mocha"
+        app:layout_constraintVertical_bias="0.214" />
+
+
+</android.support.constraint.ConstraintLayout>
