@@ -173,5 +173,12 @@ public class KindCoffeepage extends AppCompatActivity {
             }
         });
 
+
+    }
+
+
+    public void btnNextClick(View view) {
+        Intent intent = new Intent(KindCoffeepage.this, ExtraActivity.class);
+        startActivity(intent);
     }
 }

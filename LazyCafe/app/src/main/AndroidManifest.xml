@@ -53,8 +53,9 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".controller.activity.LoginActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".controller.activity.KindCoffeepage"></activity>
+            android:screenOrientation="portrait" />
+        <activity android:name=".controller.activity.KindCoffeepage" />
+        <activity android:name=".controller.activity.ExtraActivity"></activity>
     </application>
 
 </manifest>

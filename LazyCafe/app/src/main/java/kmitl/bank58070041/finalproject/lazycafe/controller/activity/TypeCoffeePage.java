@@ -27,7 +27,7 @@ public class TypeCoffeePage extends AppCompatActivity {
         blend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Drawable chooseIt = getResources().getDrawable(R.drawable.com_facebook_button_like_icon_selected);
+                Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 blend.setBackground(chooseIt);
                 ice.setBackground(getResources().getDrawable(R.drawable.ice));
                 hot.setBackground(getResources().getDrawable(R.drawable.hot));
@@ -37,7 +37,7 @@ public class TypeCoffeePage extends AppCompatActivity {
         ice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Drawable chooseIt = getResources().getDrawable(R.drawable.com_facebook_button_like_icon_selected);
+                Drawable chooseIt = getResources().getDrawable(R.drawable.ice_choose);
                 ice.setBackground(chooseIt);
                 blend.setBackground(getResources().getDrawable(R.drawable.blender));
                 hot.setBackground(getResources().getDrawable(R.drawable.hot));
@@ -47,7 +47,7 @@ public class TypeCoffeePage extends AppCompatActivity {
         hot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Drawable chooseIt = getResources().getDrawable(R.drawable.com_facebook_button_like_icon_selected);
+                Drawable chooseIt = getResources().getDrawable(R.drawable.hot_choose);
                 hot.setBackground(chooseIt);
                 blend.setBackground(getResources().getDrawable(R.drawable.blender));
                 ice.setBackground(getResources().getDrawable(R.drawable.ice));
