@@ -32,150 +32,116 @@ public class KindCoffeepage extends AppCompatActivity {
         espresso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Drawable chooseIt = getResources().getDrawable(R.drawable.com_facebook_button_like_icon_selected);
+                resetSelected();
+                Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 espresso.setBackground(chooseIt);
-                americano.setBackground(getResources().getDrawable(R.drawable.blender));
-                macchiato.setBackground(getResources().getDrawable(R.drawable.blender));
-                cappuccino.setBackground(getResources().getDrawable(R.drawable.blender));
-                flat_white.setBackground(getResources().getDrawable(R.drawable.blender));
-                mocha.setBackground(getResources().getDrawable(R.drawable.blender));
-                affogato.setBackground(getResources().getDrawable(R.drawable.blender));
-                latte.setBackground(getResources().getDrawable(R.drawable.blender));
-                latte_macchiato.setBackground(getResources().getDrawable(R.drawable.blender));
+
             }
         });
 
         americano.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Drawable chooseIt = getResources().getDrawable(R.drawable.com_facebook_button_like_icon_selected);
+                resetSelected();
+                Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 americano.setBackground(chooseIt);
-                espresso.setBackground(getResources().getDrawable(R.drawable.blender));
-                macchiato.setBackground(getResources().getDrawable(R.drawable.blender));
-                cappuccino.setBackground(getResources().getDrawable(R.drawable.blender));
-                flat_white.setBackground(getResources().getDrawable(R.drawable.blender));
-                mocha.setBackground(getResources().getDrawable(R.drawable.blender));
-                affogato.setBackground(getResources().getDrawable(R.drawable.blender));
-                latte.setBackground(getResources().getDrawable(R.drawable.blender));
-                latte_macchiato.setBackground(getResources().getDrawable(R.drawable.blender));
+
             }
         });
 
         macchiato.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Drawable chooseIt = getResources().getDrawable(R.drawable.com_facebook_button_like_icon_selected);
+                resetSelected();
+                Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 macchiato.setBackground(chooseIt);
-                espresso.setBackground(getResources().getDrawable(R.drawable.blender));
-                americano.setBackground(getResources().getDrawable(R.drawable.blender));
-                cappuccino.setBackground(getResources().getDrawable(R.drawable.blender));
-                flat_white.setBackground(getResources().getDrawable(R.drawable.blender));
-                mocha.setBackground(getResources().getDrawable(R.drawable.blender));
-                affogato.setBackground(getResources().getDrawable(R.drawable.blender));
-                latte.setBackground(getResources().getDrawable(R.drawable.blender));
-                latte_macchiato.setBackground(getResources().getDrawable(R.drawable.blender));
+
             }
         });
 
         cappuccino.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Drawable chooseIt = getResources().getDrawable(R.drawable.com_facebook_button_like_icon_selected);
+                resetSelected();
+                Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 cappuccino.setBackground(chooseIt);
-                espresso.setBackground(getResources().getDrawable(R.drawable.blender));
-                macchiato.setBackground(getResources().getDrawable(R.drawable.blender));
-                americano.setBackground(getResources().getDrawable(R.drawable.blender));
-                flat_white.setBackground(getResources().getDrawable(R.drawable.blender));
-                mocha.setBackground(getResources().getDrawable(R.drawable.blender));
-                affogato.setBackground(getResources().getDrawable(R.drawable.blender));
-                latte.setBackground(getResources().getDrawable(R.drawable.blender));
-                latte_macchiato.setBackground(getResources().getDrawable(R.drawable.blender));
+
             }
         });
 
         flat_white.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Drawable chooseIt = getResources().getDrawable(R.drawable.com_facebook_button_like_icon_selected);
+                resetSelected();
+                Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 flat_white.setBackground(chooseIt);
-                espresso.setBackground(getResources().getDrawable(R.drawable.blender));
-                macchiato.setBackground(getResources().getDrawable(R.drawable.blender));
-                americano.setBackground(getResources().getDrawable(R.drawable.blender));
-                cappuccino.setBackground(getResources().getDrawable(R.drawable.blender));
-                mocha.setBackground(getResources().getDrawable(R.drawable.blender));
-                affogato.setBackground(getResources().getDrawable(R.drawable.blender));
-                latte.setBackground(getResources().getDrawable(R.drawable.blender));
-                latte_macchiato.setBackground(getResources().getDrawable(R.drawable.blender));
+
             }
         });
 
         mocha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Drawable chooseIt = getResources().getDrawable(R.drawable.com_facebook_button_like_icon_selected);
+                resetSelected();
+                Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 mocha.setBackground(chooseIt);
-                espresso.setBackground(getResources().getDrawable(R.drawable.blender));
-                macchiato.setBackground(getResources().getDrawable(R.drawable.blender));
-                americano.setBackground(getResources().getDrawable(R.drawable.blender));
-                cappuccino.setBackground(getResources().getDrawable(R.drawable.blender));
-                flat_white.setBackground(getResources().getDrawable(R.drawable.blender));
-                affogato.setBackground(getResources().getDrawable(R.drawable.blender));
-                latte.setBackground(getResources().getDrawable(R.drawable.blender));
-                latte_macchiato.setBackground(getResources().getDrawable(R.drawable.blender));
+
+
             }
         });
 
         affogato.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Drawable chooseIt = getResources().getDrawable(R.drawable.com_facebook_button_like_icon_selected);
+                resetSelected();
+                Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 affogato.setBackground(chooseIt);
-                espresso.setBackground(getResources().getDrawable(R.drawable.blender));
-                macchiato.setBackground(getResources().getDrawable(R.drawable.blender));
-                americano.setBackground(getResources().getDrawable(R.drawable.blender));
-                cappuccino.setBackground(getResources().getDrawable(R.drawable.blender));
-                flat_white.setBackground(getResources().getDrawable(R.drawable.blender));
-                mocha.setBackground(getResources().getDrawable(R.drawable.blender));
-                latte.setBackground(getResources().getDrawable(R.drawable.blender));
-                latte_macchiato.setBackground(getResources().getDrawable(R.drawable.blender));
+
             }
         });
 
         latte.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Drawable chooseIt = getResources().getDrawable(R.drawable.com_facebook_button_like_icon_selected);
+                resetSelected();
+                Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 latte.setBackground(chooseIt);
-                espresso.setBackground(getResources().getDrawable(R.drawable.blender));
-                macchiato.setBackground(getResources().getDrawable(R.drawable.blender));
-                americano.setBackground(getResources().getDrawable(R.drawable.blender));
-                cappuccino.setBackground(getResources().getDrawable(R.drawable.blender));
-                flat_white.setBackground(getResources().getDrawable(R.drawable.blender));
-                mocha.setBackground(getResources().getDrawable(R.drawable.blender));
-                affogato.setBackground(getResources().getDrawable(R.drawable.blender));
-                latte_macchiato.setBackground(getResources().getDrawable(R.drawable.blender));
             }
         });
 
         latte_macchiato.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Drawable chooseIt = getResources().getDrawable(R.drawable.com_facebook_button_like_icon_selected);
+                resetSelected();
+                Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 latte_macchiato.setBackground(chooseIt);
-                espresso.setBackground(getResources().getDrawable(R.drawable.blender));
-                macchiato.setBackground(getResources().getDrawable(R.drawable.blender));
-                americano.setBackground(getResources().getDrawable(R.drawable.blender));
-                cappuccino.setBackground(getResources().getDrawable(R.drawable.blender));
-                flat_white.setBackground(getResources().getDrawable(R.drawable.blender));
-                mocha.setBackground(getResources().getDrawable(R.drawable.blender));
-                affogato.setBackground(getResources().getDrawable(R.drawable.blender));
-                latte.setBackground(getResources().getDrawable(R.drawable.blender));
             }
         });
 
 
     }
 
+    public void resetSelected(){
+        ImageView espresso = findViewById(R.id.espresso);
+        ImageView americano = findViewById(R.id.americano);
+        ImageView macchiato = findViewById(R.id.macchiato);
+        ImageView cappuccino = findViewById(R.id.cappuccino);
+        ImageView flat_white = findViewById(R.id.flat_white);
+        ImageView mocha = findViewById(R.id.mocha);
+        ImageView affogato = findViewById(R.id.affogato);
+        ImageView latte = findViewById(R.id.latte);
+        ImageView latte_macchiato = findViewById(R.id.latte_macchiato);
+        espresso.setBackground(getResources().getDrawable(R.drawable.blender));
+        americano.setBackground(getResources().getDrawable(R.drawable.blender));
+        macchiato.setBackground(getResources().getDrawable(R.drawable.blender));
+        cappuccino.setBackground(getResources().getDrawable(R.drawable.blender));
+        flat_white.setBackground(getResources().getDrawable(R.drawable.blender));
+        mocha.setBackground(getResources().getDrawable(R.drawable.blender));
+        affogato.setBackground(getResources().getDrawable(R.drawable.blender));
+        latte.setBackground(getResources().getDrawable(R.drawable.blender));
+        latte_macchiato.setBackground(getResources().getDrawable(R.drawable.blender));
+
+    }
 
     public void btnNextClick(View view) {
         Intent intent = new Intent(KindCoffeepage.this, ExtraActivity.class);

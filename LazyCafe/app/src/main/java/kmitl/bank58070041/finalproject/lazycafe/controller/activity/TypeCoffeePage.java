@@ -27,33 +27,39 @@ public class TypeCoffeePage extends AppCompatActivity {
         blend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 blend.setBackground(chooseIt);
-                ice.setBackground(getResources().getDrawable(R.drawable.ice));
-                hot.setBackground(getResources().getDrawable(R.drawable.hot));
                 type = "blend";
             }
         });
         ice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.ice_choose);
                 ice.setBackground(chooseIt);
-                blend.setBackground(getResources().getDrawable(R.drawable.blender));
-                hot.setBackground(getResources().getDrawable(R.drawable.hot));
                 type = "ice";
             }
         });
         hot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.hot_choose);
                 hot.setBackground(chooseIt);
-                blend.setBackground(getResources().getDrawable(R.drawable.blender));
-                ice.setBackground(getResources().getDrawable(R.drawable.ice));
                 type = "hot";
             }
         });
+    }
+
+    public void resetSelected(){
+        ImageView blend = findViewById(R.id.blender);
+        ImageView ice = findViewById(R.id.ice);
+        ImageView hot = findViewById(R.id.hot);
+        hot.setBackground(getResources().getDrawable(R.drawable.hot));
+        blend.setBackground(getResources().getDrawable(R.drawable.blender));
+        ice.setBackground(getResources().getDrawable(R.drawable.ice));
     }
 
     public void btnNextClick(View view) {

@@ -23,11 +23,9 @@ public class ExtraActivity extends AppCompatActivity {
         wipcream.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Drawable chooseIt = getResources().getDrawable(R.drawable.com_facebook_button_like_icon_selected);
+                resetSelected();
+                Drawable chooseIt = getResources().getDrawable(R.drawable.hot_choose);
                 wipcream.setBackground(chooseIt);
-                milk_shot.setBackground(getResources().getDrawable(R.drawable.hot));
-                extra_shot.setBackground(getResources().getDrawable(R.drawable.hot));
-                double_shot.setBackground(getResources().getDrawable(R.drawable.hot));
 
             }
         });
@@ -35,12 +33,9 @@ public class ExtraActivity extends AppCompatActivity {
         milk_shot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Drawable chooseIt = getResources().getDrawable(R.drawable.com_facebook_button_like_icon_selected);
+                resetSelected();
+                Drawable chooseIt = getResources().getDrawable(R.drawable.hot_choose);
                 milk_shot.setBackground(chooseIt);
-                wipcream.setBackground(getResources().getDrawable(R.drawable.hot));
-                extra_shot.setBackground(getResources().getDrawable(R.drawable.hot));
-                double_shot.setBackground(getResources().getDrawable(R.drawable.hot));
-
 
             }
         });
@@ -48,11 +43,9 @@ public class ExtraActivity extends AppCompatActivity {
         extra_shot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Drawable chooseIt = getResources().getDrawable(R.drawable.com_facebook_button_like_icon_selected);
+                resetSelected();
+                Drawable chooseIt = getResources().getDrawable(R.drawable.hot_choose);
                 extra_shot.setBackground(chooseIt);
-                wipcream.setBackground(getResources().getDrawable(R.drawable.hot));
-                milk_shot.setBackground(getResources().getDrawable(R.drawable.hot));
-                double_shot.setBackground(getResources().getDrawable(R.drawable.hot));
 
             }
         });
@@ -60,14 +53,22 @@ public class ExtraActivity extends AppCompatActivity {
         double_shot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Drawable chooseIt = getResources().getDrawable(R.drawable.com_facebook_button_like_icon_selected);
+                resetSelected();
+                Drawable chooseIt = getResources().getDrawable(R.drawable.hot_choose);
                 double_shot.setBackground(chooseIt);
-                wipcream.setBackground(getResources().getDrawable(R.drawable.hot));
-                extra_shot.setBackground(getResources().getDrawable(R.drawable.hot));
-                milk_shot.setBackground(getResources().getDrawable(R.drawable.hot));
-
             }
         });
+    }
+
+    public void resetSelected(){
+        ImageView wipcream = findViewById(R.id.wipcream);
+        ImageView milk_shot = findViewById(R.id.milk_shot);
+        ImageView extra_shot = findViewById(R.id.extra_shot);
+        ImageView double_shot = findViewById(R.id.double_shot);
+        wipcream.setBackground(getResources().getDrawable(R.drawable.hot));
+        milk_shot.setBackground(getResources().getDrawable(R.drawable.hot));
+        extra_shot.setBackground(getResources().getDrawable(R.drawable.hot));
+        double_shot.setBackground(getResources().getDrawable(R.drawable.hot));
     }
 
     public void btnNextClick(View view) {
