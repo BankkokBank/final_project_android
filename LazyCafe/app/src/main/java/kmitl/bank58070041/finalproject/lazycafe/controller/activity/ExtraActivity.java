@@ -1,14 +1,20 @@
 package kmitl.bank58070041.finalproject.lazycafe.controller.activity;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
 import kmitl.bank58070041.finalproject.lazycafe.R;
+import kmitl.bank58070041.finalproject.lazycafe.model.Coffee;
 
 public class ExtraActivity extends AppCompatActivity {
+
+    private int extraPrice;
+    Coffee coffee = new Coffee();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +32,8 @@ public class ExtraActivity extends AppCompatActivity {
                 resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.hot_choose);
                 wipcream.setBackground(chooseIt);
+                coffee.setExtra("Wipcream");
+                extraPrice = 15;
 
             }
         });
@@ -36,6 +44,8 @@ public class ExtraActivity extends AppCompatActivity {
                 resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.hot_choose);
                 milk_shot.setBackground(chooseIt);
+                coffee.setExtra("Milk Shot");
+                extraPrice = 10;
 
             }
         });
@@ -46,6 +56,8 @@ public class ExtraActivity extends AppCompatActivity {
                 resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.hot_choose);
                 extra_shot.setBackground(chooseIt);
+                coffee.setExtra("Extra Shot");
+                extraPrice = 20;
 
             }
         });
@@ -56,6 +68,9 @@ public class ExtraActivity extends AppCompatActivity {
                 resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.hot_choose);
                 double_shot.setBackground(chooseIt);
+                coffee.setExtra("Double Shot");
+                extraPrice = 35;
+
             }
         });
     }
@@ -72,6 +87,16 @@ public class ExtraActivity extends AppCompatActivity {
     }
 
     public void btnNextClick(View view) {
-            
+        Intent intent = new Intent(ExtraActivity.this, CheckBill.class);
+        Intent getIntent = getIntent();
+        int total = getIntent.getIntExtra("total",0);
+        String bill = getIntent.getStringExtra("bill");
+        intent.putExtra("total", total+extraPrice);
+        intent.putExtra("bill",bill+ " : " + coffee.getExtra());
+        startActivity(intent);
+
+        Log.i("mytag", String.valueOf(total+extraPrice));
+        Log.i("mytag2",bill+ " : " + coffee.getExtra());
+
     }
 }

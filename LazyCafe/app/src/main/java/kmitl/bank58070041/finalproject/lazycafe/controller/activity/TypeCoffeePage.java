@@ -33,7 +33,7 @@ public class TypeCoffeePage extends AppCompatActivity {
                 resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 blend.setBackground(chooseIt);
-                coffee.setType("blend");
+                coffee.setType("Blend");
                 coffee.setPrice(20);
             }
         });
@@ -43,7 +43,7 @@ public class TypeCoffeePage extends AppCompatActivity {
                 resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.ice_choose);
                 ice.setBackground(chooseIt);
-                coffee.setType("iced");
+                coffee.setType("Iced");
                 coffee.setPrice(15);
             }
         });
@@ -53,7 +53,7 @@ public class TypeCoffeePage extends AppCompatActivity {
                 resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.hot_choose);
                 hot.setBackground(chooseIt);
-                coffee.setType("hot");
+                coffee.setType("Hot");
                 coffee.setPrice(10);
             }
         });
@@ -74,9 +74,6 @@ public class TypeCoffeePage extends AppCompatActivity {
         int price = coffee.getPrice();
         intent.putExtra("bill", coffee.getType());
         intent.putExtra("total", coffee.getPrice());
-
-        Log.i("myTag", coffee.getType());
-        Log.i("myTag2", String.valueOf(coffee.getPrice()));
         startActivity(intent);
 
     }
