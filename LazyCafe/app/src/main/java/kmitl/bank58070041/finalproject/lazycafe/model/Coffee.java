@@ -9,6 +9,8 @@ import android.widget.EditText;
 public class Coffee {
     private String type;
     private String kindCoffee;
+    private int price;
+
 
     public Coffee() {
     }
@@ -17,6 +19,10 @@ public class Coffee {
         this.type = type;
         this.kindCoffee = kindCoffee;
     }
+
+    public int getPrice() { return price; }
+
+    public void setPrice(int price) { this.price = price; }
 
     public String getType() {
         return type;

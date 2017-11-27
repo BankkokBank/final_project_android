@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -14,10 +15,12 @@ import kmitl.bank58070041.finalproject.lazycafe.R;
 import kmitl.bank58070041.finalproject.lazycafe.model.Coffee;
 
 public class TypeCoffeePage extends AppCompatActivity {
-    private String type;
 
+    final Coffee coffee = new Coffee();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_type_coffee);
         final ImageView blend = findViewById(R.id.blender);
@@ -30,7 +33,8 @@ public class TypeCoffeePage extends AppCompatActivity {
                 resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 blend.setBackground(chooseIt);
-                type = "blend";
+                coffee.setType("blend");
+                coffee.setPrice(20);
             }
         });
         ice.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +43,8 @@ public class TypeCoffeePage extends AppCompatActivity {
                 resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.ice_choose);
                 ice.setBackground(chooseIt);
-                type = "ice";
+                coffee.setType("iced");
+                coffee.setPrice(15);
             }
         });
         hot.setOnClickListener(new View.OnClickListener() {
@@ -48,7 +53,8 @@ public class TypeCoffeePage extends AppCompatActivity {
                 resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.hot_choose);
                 hot.setBackground(chooseIt);
-                type = "hot";
+                coffee.setType("hot");
+                coffee.setPrice(10);
             }
         });
     }
@@ -63,11 +69,16 @@ public class TypeCoffeePage extends AppCompatActivity {
     }
 
     public void btnNextClick(View view) {
-        Coffee typeCoffee = new Coffee();
-        typeCoffee.setType(type);
         Intent intent = new Intent(TypeCoffeePage.this, KindCoffeepage.class);
-        intent.putExtra("typeCoffee",typeCoffee.getType());
+        String bill = coffee.getType();
+        int price = coffee.getPrice();
+        intent.putExtra("bill", coffee.getType());
+        intent.putExtra("total", coffee.getPrice());
+
+        Log.i("myTag", coffee.getType());
+        Log.i("myTag2", String.valueOf(coffee.getPrice()));
         startActivity(intent);
+
     }
 }
 

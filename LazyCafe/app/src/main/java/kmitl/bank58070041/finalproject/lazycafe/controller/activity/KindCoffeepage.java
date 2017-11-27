@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -12,8 +13,6 @@ import kmitl.bank58070041.finalproject.lazycafe.R;
 import kmitl.bank58070041.finalproject.lazycafe.model.Coffee;
 
 public class KindCoffeepage extends AppCompatActivity {
-    private Coffee coffee;
-    private String type;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,12 +28,15 @@ public class KindCoffeepage extends AppCompatActivity {
         final ImageView latte = findViewById(R.id.latte);
         final ImageView latte_macchiato = findViewById(R.id.latte_macchiato);
 
+        final Coffee coffee = new Coffee();
+
         espresso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 espresso.setBackground(chooseIt);
+                coffee.setKindCoffee("espresso");
 
             }
         });
@@ -45,7 +47,7 @@ public class KindCoffeepage extends AppCompatActivity {
                 resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 americano.setBackground(chooseIt);
-
+                coffee.setKindCoffee("americano");
             }
         });
 
@@ -55,7 +57,7 @@ public class KindCoffeepage extends AppCompatActivity {
                 resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 macchiato.setBackground(chooseIt);
-
+                coffee.setKindCoffee("macchiato");
             }
         });
 
@@ -65,7 +67,7 @@ public class KindCoffeepage extends AppCompatActivity {
                 resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 cappuccino.setBackground(chooseIt);
-
+                coffee.setKindCoffee("cappuccino");
             }
         });
 
@@ -75,7 +77,7 @@ public class KindCoffeepage extends AppCompatActivity {
                 resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 flat_white.setBackground(chooseIt);
-
+                coffee.setKindCoffee("flat_white");
             }
         });
 
@@ -85,6 +87,7 @@ public class KindCoffeepage extends AppCompatActivity {
                 resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 mocha.setBackground(chooseIt);
+                coffee.setKindCoffee("mocha");
 
 
             }
@@ -96,6 +99,7 @@ public class KindCoffeepage extends AppCompatActivity {
                 resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 affogato.setBackground(chooseIt);
+                coffee.setKindCoffee("affogato");
 
             }
         });
@@ -106,6 +110,7 @@ public class KindCoffeepage extends AppCompatActivity {
                 resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 latte.setBackground(chooseIt);
+                coffee.setKindCoffee("latte");
             }
         });
 
@@ -115,6 +120,7 @@ public class KindCoffeepage extends AppCompatActivity {
                 resetSelected();
                 Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
                 latte_macchiato.setBackground(chooseIt);
+                coffee.setKindCoffee("latte_macchiato");
             }
         });
 
@@ -144,7 +150,17 @@ public class KindCoffeepage extends AppCompatActivity {
     }
 
     public void btnNextClick(View view) {
+        Coffee coffee = new Coffee();
         Intent intent = new Intent(KindCoffeepage.this, ExtraActivity.class);
+        Intent getIntent = getIntent();
+        int total = getIntent.getIntExtra("total", 0);
+        String typeCoffee = getIntent.getStringExtra("bill");
+        intent.putExtra("total", total+20);
+        intent.putExtra("bill", typeCoffee + " : " + coffee.getKindCoffee());
+
+        Log.i("totalTag", String.valueOf(total+20));
+        Log.i("typeTag", typeCoffee+coffee.getKindCoffee());
+
         startActivity(intent);
     }
 }
