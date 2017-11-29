@@ -5,14 +5,17 @@ package kmitl.bank58070041.finalproject.lazycafe.model;
  */
 
 public class User {
+
+
+    private static User userInstance;
     private String id;
     private String username;
     private String uriProfile;
 
-    public User() {
+    private User() {
     }
 
-    public User(String id, String username, String uriProfile) {
+    private User(String id, String username, String uriProfile) {
         this.id = id;
         this.username = username;
         this.uriProfile = uriProfile;
@@ -41,4 +44,12 @@ public class User {
     public void setUriProfile(String uriProfile) {
         this.uriProfile = uriProfile;
     }
+
+    public static User getUserInstance() {
+        if (userInstance == null){
+            userInstance = new User();
+        }
+        return userInstance;
+    }
+
 }

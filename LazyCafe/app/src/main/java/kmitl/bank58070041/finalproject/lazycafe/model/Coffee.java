@@ -2,9 +2,6 @@ package kmitl.bank58070041.finalproject.lazycafe.model;
 
 import android.widget.EditText;
 
-/**
- * Created by Bankkok_Bank on 25/11/2560.
- */
 
 public class Coffee {
     private String type;
@@ -13,14 +10,14 @@ public class Coffee {
     private int price;
 
 
-    public Coffee() {
-    }
 
-    public Coffee(String type, String kindCoffee) {
-        this.type = type;
-        this.kindCoffee = kindCoffee;
-    }
+    private  String time;
 
+
+
+    public String getTime() { return time; }
+
+    public void setTime(String time) { this.time = time; }
 
     public int getPrice() { return price; }
 

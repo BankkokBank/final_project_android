@@ -31,8 +31,7 @@ public class LoginActivity extends AppCompatActivity {
     private AccessToken accessToken;
     private LoginButton loginButton;
     private FirebaseAuth.AuthStateListener firebaseAuthListener;
-    private User user;
-    private String uploadId;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,8 +71,11 @@ public class LoginActivity extends AppCompatActivity {
 
         try {
             Profile profile = Profile.getCurrentProfile();
-            user = new User(uploadId, profile.getName(), profile.getProfilePictureUri(35, 35).toString());
-            goMainScreen(profile.getName(), profile.getProfilePictureUri(35, 35).toString(), uploadId);
+            User user = User.getUserInstance();
+            user.setId(profile.getId());
+            user.setUsername(profile.getName());
+            user.setUriProfile(profile.getProfilePictureUri(300,300).toString());
+            goMainScreen(profile.getName(), profile.getProfilePictureUri(35, 35).toString(), profile.getId());
 
 
         } catch (NullPointerException ex) {
