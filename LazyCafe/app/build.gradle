@@ -33,6 +33,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:11.4.2'
     implementation 'com.google.firebase:firebase-core:11.4.2'
     implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
 
     //add library
     implementation 'com.github.bumptech.glide:glide:3.7.0'
