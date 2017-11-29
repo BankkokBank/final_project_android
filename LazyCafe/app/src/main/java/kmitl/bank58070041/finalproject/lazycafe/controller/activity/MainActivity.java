@@ -45,10 +45,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_home:
                     transaction.replace(R.id.frameLayout,new HomeFragment()).commit();
                     return true;
-                case R.id.navigation_dashboard:
+                case R.id.navigation_queue:
                     transaction.replace(R.id.frameLayout,new QueueFragment()).commit();
                     return true;
-                case R.id.navigation_notifications:
+                case R.id.navigation_profile:
                     transaction.replace(R.id.frameLayout,new ProfileFragment()).commit();
                     return true;
             }
