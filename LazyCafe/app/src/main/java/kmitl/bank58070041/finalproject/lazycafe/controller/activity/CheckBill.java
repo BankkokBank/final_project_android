@@ -31,7 +31,7 @@ public class CheckBill extends AppCompatActivity {
         final User user = User.getUserInstance();
 
         DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
-        final DatabaseReference mBillRef = mRootRef.child(user.getUsername());
+        final DatabaseReference mBillRef = mRootRef.child("user");
 
 
         Button button = findViewById(R.id.button3);
@@ -47,7 +47,7 @@ public class CheckBill extends AppCompatActivity {
             public void onClick(View view) {
                 TimePicker timePicker = findViewById(R.id.timePicker);
 
-                Bill checkBill =new  Bill(bill, user.getUriProfile(), String.valueOf(total)+" Bath", timePicker.getHour()+":"+timePicker.getMinute());
+                Bill checkBill =new  Bill(user.getUsername(), bill, user.getUriProfile(), String.valueOf(total)+" Bath", String.format("%02d",timePicker.getHour())+":"+String.format("%02d",timePicker.getMinute()));
                 mBillRef.push().setValue(checkBill);
                 Intent intent =new Intent(CheckBill.this, MainActivity.class);
                 startActivity(intent);

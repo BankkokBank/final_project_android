@@ -75,7 +75,7 @@ public class LoginActivity extends AppCompatActivity {
             user.setId(profile.getId());
             user.setUsername(profile.getName());
             user.setUriProfile(profile.getProfilePictureUri(300,300).toString());
-            goMainScreen(profile.getName(), profile.getProfilePictureUri(35, 35).toString(), profile.getId());
+            goMainScreen(profile.getName(), profile.getProfilePictureUri(300, 300).toString(), profile.getId());
 
 
         } catch (NullPointerException ex) {

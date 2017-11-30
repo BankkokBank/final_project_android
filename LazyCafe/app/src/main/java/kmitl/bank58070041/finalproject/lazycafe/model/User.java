@@ -8,8 +8,8 @@ public class User {
 
 
     private static User userInstance;
-    private String id;
-    private String username;
+    private String id = "1234567890";
+    private String username = "Test";
     private String uriProfile;
 
     private User() {
