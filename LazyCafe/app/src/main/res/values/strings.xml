@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Lazy Cafe\'</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home">Home</string>
+    <string name="queue">Queue</string>
+    <string name="profile">Profile</string>
+    <string name="go_coffee">Go Coffee</string>
+    <string name="username">" " Username</string>
+    <string name="password">" "Password</string>
+    <string name="login_with_facebook">Login With Facebook</string>
+    <string name="facebook_app_id">740033442853953</string>
+    <string name="fb_login_protocol_scheme">fb740033442853953</string>
+    <string name="cancel_login">Login Cancel</string>
+    <string name="error_login">Login Error</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_extra">ExtraActivity</string>
+    <string name="lazy_cafe">Lazy Cafe\'</string>
+
+</resources>

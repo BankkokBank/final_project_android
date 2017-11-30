@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nextPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".controller.activity.TypeCoffeePage">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:padding="10dp"
+            android:text="Queue"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="30dp" />
+        <ImageView
+            android:id="@+id/blender"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/blender" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bleaded (+20 Bath)"
+            android:textAlignment="center"
+            android:textColor="#fff"/>
+
+        <ImageView
+            android:id="@+id/ice"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/ice" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iced (+15 Bath)"
+            android:textAlignment="center"
+            android:textColor="#fff"/>
+
+        <ImageView
+            android:id="@+id/hot"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="30dp"
+
+            android:background="@drawable/hot" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hot (+10 Bath)"
+            android:textAlignment="center"
+            android:textColor="#fff" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="92dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:onClick="btnNextClick"
+            android:text="next"
+            android:textColor="#fff" />
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
