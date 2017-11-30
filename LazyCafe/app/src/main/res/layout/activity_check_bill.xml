@@ -1,101 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#cca668"
 
+    android:background="#ffffff"
     tools:context="kmitl.bank58070041.finalproject.lazycafe.controller.activity.CheckBill">
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
     <TextView
-        android:id="@+id/payment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:background="#938c82"
-        android:text="Payment"
+        android:background="#000"
+        android:padding="10dp"
+        android:text="Check Bill"
         android:textAlignment="center"
         android:textColor="#fff"
-        android:textSize="55dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:textSize="30dp"
+        />
 
     <TextView
         android:id="@+id/detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_alignStart="@+id/payment"
+        android:layout_alignEnd="@+id/payment"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
         android:text="  Detail : "
-        android:textColor="#fff"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.165" />
+        android:textColor="#000"
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/price"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_alignBottom="@+id/detail"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
         android:text="  Price  : "
-        android:textColor="#fff"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.246" />
+        android:textColor="#000"
+        android:textSize="20dp" />
 
     <TextView
+        android:id="@+id/timeText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/price"
+        android:layout_marginTop="30dp"
         android:text="Pick Up Time"
         android:textAlignment="center"
-        android:textColor="#fff"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.348" />
+        android:textColor="#000"
+        android:textSize="20dp" />
 
     <TimePicker
         android:id="@+id/timePicker"
-        android:layout_width="341dp"
-        android:layout_height="213dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:timePickerMode="spinner"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.595">
+        android:layout_width="350dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:layout_alignBottom="@+id/timeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:timePickerMode="spinner">
 
     </TimePicker>
 
@@ -103,16 +74,13 @@
         android:id="@+id/button3"
         android:layout_width="106dp"
         android:layout_height="60dp"
+        android:layout_gravity="center"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.934" />
-
-</android.support.constraint.ConstraintLayout>
+        android:layout_marginTop="60dp"
+        android:layout_alignBottom="@+id/timePicker"
+        android:text="Finish"
+        />
+</LinearLayout>
+</RelativeLayout>

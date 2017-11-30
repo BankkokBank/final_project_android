@@ -36,7 +36,7 @@ public class KindCoffeepage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 resetSelected();
-                Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
+                Drawable chooseIt = getResources().getDrawable(R.drawable.espresso_c);
                 espresso.setBackground(chooseIt);
                 coffee.setKindCoffee("Espresso");
 
@@ -47,7 +47,7 @@ public class KindCoffeepage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 resetSelected();
-                Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
+                Drawable chooseIt = getResources().getDrawable(R.drawable.americano_c);
                 americano.setBackground(chooseIt);
                 coffee.setKindCoffee("Americano");
             }
@@ -57,7 +57,7 @@ public class KindCoffeepage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 resetSelected();
-                Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
+                Drawable chooseIt = getResources().getDrawable(R.drawable.macchiato_c);
                 macchiato.setBackground(chooseIt);
                 coffee.setKindCoffee("Macchiato");
             }
@@ -67,7 +67,7 @@ public class KindCoffeepage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 resetSelected();
-                Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
+                Drawable chooseIt = getResources().getDrawable(R.drawable.cappuccino_c);
                 cappuccino.setBackground(chooseIt);
                 coffee.setKindCoffee("Cappuccino");
             }
@@ -77,7 +77,7 @@ public class KindCoffeepage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 resetSelected();
-                Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
+                Drawable chooseIt = getResources().getDrawable(R.drawable.flat_white_c);
                 flat_white.setBackground(chooseIt);
                 coffee.setKindCoffee("Flat White");
             }
@@ -87,7 +87,7 @@ public class KindCoffeepage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 resetSelected();
-                Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
+                Drawable chooseIt = getResources().getDrawable(R.drawable.mocha_c);
                 mocha.setBackground(chooseIt);
                 coffee.setKindCoffee("Mocha");
 
@@ -99,7 +99,7 @@ public class KindCoffeepage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 resetSelected();
-                Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
+                Drawable chooseIt = getResources().getDrawable(R.drawable.affogato_c);
                 affogato.setBackground(chooseIt);
                 coffee.setKindCoffee("Affogato");
 
@@ -110,7 +110,7 @@ public class KindCoffeepage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 resetSelected();
-                Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
+                Drawable chooseIt = getResources().getDrawable(R.drawable.latte_c);
                 latte.setBackground(chooseIt);
                 coffee.setKindCoffee("Latte");
             }
@@ -120,7 +120,7 @@ public class KindCoffeepage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 resetSelected();
-                Drawable chooseIt = getResources().getDrawable(R.drawable.blender_choose);
+                Drawable chooseIt = getResources().getDrawable(R.drawable.latte_macchiato_c);
                 latte_macchiato.setBackground(chooseIt);
                 coffee.setKindCoffee("Latte Macchiato");
             }
@@ -139,15 +139,15 @@ public class KindCoffeepage extends AppCompatActivity {
         ImageView affogato = findViewById(R.id.affogato);
         ImageView latte = findViewById(R.id.latte);
         ImageView latte_macchiato = findViewById(R.id.latte_macchiato);
-        espresso.setBackground(getResources().getDrawable(R.drawable.blender));
-        americano.setBackground(getResources().getDrawable(R.drawable.blender));
-        macchiato.setBackground(getResources().getDrawable(R.drawable.blender));
-        cappuccino.setBackground(getResources().getDrawable(R.drawable.blender));
-        flat_white.setBackground(getResources().getDrawable(R.drawable.blender));
-        mocha.setBackground(getResources().getDrawable(R.drawable.blender));
-        affogato.setBackground(getResources().getDrawable(R.drawable.blender));
-        latte.setBackground(getResources().getDrawable(R.drawable.blender));
-        latte_macchiato.setBackground(getResources().getDrawable(R.drawable.blender));
+        espresso.setBackground(getResources().getDrawable(R.drawable.espresso));
+        americano.setBackground(getResources().getDrawable(R.drawable.americano));
+        macchiato.setBackground(getResources().getDrawable(R.drawable.macchiato));
+        cappuccino.setBackground(getResources().getDrawable(R.drawable.cappuccino));
+        flat_white.setBackground(getResources().getDrawable(R.drawable.flat_white));
+        mocha.setBackground(getResources().getDrawable(R.drawable.mocha));
+        affogato.setBackground(getResources().getDrawable(R.drawable.affogato));
+        latte.setBackground(getResources().getDrawable(R.drawable.latte));
+        latte_macchiato.setBackground(getResources().getDrawable(R.drawable.latte_macchiato));
 
     }
 

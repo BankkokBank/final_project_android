@@ -1,133 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#cca668"
+    android:background="#000000"
     tools:context="kmitl.bank58070041.finalproject.lazycafe.controller.activity.KindCoffeepage">
 
-    <ImageView
-        android:id="@+id/espresso"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="116dp"
-        android:background="@drawable/blender"
-        app:layout_constraintEnd_toStartOf="@+id/americano"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/americano"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginTop="116dp"
-        android:background="@drawable/blender"
-        app:layout_constraintEnd_toStartOf="@+id/macchiato"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:text="Kind Coffee"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30dp" />
 
-    <ImageView
-        android:id="@+id/macchiato"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginTop="116dp"
-        android:background="@drawable/blender"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+     <TextView
+         android:layout_marginTop="20dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="All Kind Coffee 20 Bath"
+         android:textAlignment="center"
+         android:textSize="20dp"
+         android:textColor="#ffffff"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
 
-    <ImageView
-        android:id="@+id/cappuccino"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/blender"
-        app:layout_constraintEnd_toStartOf="@+id/flat_white"
-        app:layout_constraintHorizontal_bias="0.589"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/espresso" />
+        <ImageView
+            android:id="@+id/espresso"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/espresso"/>
 
-    <ImageView
-        android:id="@+id/flat_white"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/blender"
-        app:layout_constraintEnd_toStartOf="@+id/mocha"
-        app:layout_constraintTop_toBottomOf="@+id/americano" />
 
-    <ImageView
-        android:id="@+id/mocha"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/blender"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/macchiato" />
+        <ImageView
+            android:id="@+id/americano"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/americano" />
 
-    <ImageView
-        android:id="@+id/affogato"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/blender"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cappuccino"
-        app:layout_constraintVertical_bias="0.233" />
 
-    <ImageView
-        android:id="@+id/latte"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/blender"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/latte_macchiato"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toEndOf="@+id/affogato"
-        app:layout_constraintTop_toBottomOf="@+id/flat_white"
-        app:layout_constraintVertical_bias="0.233" />
+        <ImageView
+            android:id="@+id/macchiato"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/macchiato" />
+        </LinearLayout>
 
-    <ImageView
-        android:id="@+id/latte_macchiato"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/blender"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mocha"
-        app:layout_constraintVertical_bias="0.214" />
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="20dp"
+             android:orientation="horizontal"
+             android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/cappuccino"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/cappuccino" />
+
+        <ImageView
+            android:id="@+id/flat_white"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/flat_white" />
+
+        <ImageView
+            android:id="@+id/mocha"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/mocha" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/affogato"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/affogato" />
+
+            <ImageView
+                android:id="@+id/latte"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/latte" />
+
+            <ImageView
+                android:id="@+id/latte_macchiato"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/latte_macchiato" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="103dp"
-        android:layout_height="57dp"
-        android:layout_marginBottom="36dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
         android:onClick="btnNextClick"
         android:text="Next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+/>
 
-
-</android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</RelativeLayout>

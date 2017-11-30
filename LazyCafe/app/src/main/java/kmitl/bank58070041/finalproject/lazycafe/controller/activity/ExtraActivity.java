@@ -30,7 +30,7 @@ public class ExtraActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 resetSelected();
-                Drawable chooseIt = getResources().getDrawable(R.drawable.hot_choose);
+                Drawable chooseIt = getResources().getDrawable(R.drawable.whipcream_c);
                 wipcream.setBackground(chooseIt);
                 coffee.setExtra("Wipcream");
                 extraPrice = 15;
@@ -42,7 +42,7 @@ public class ExtraActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 resetSelected();
-                Drawable chooseIt = getResources().getDrawable(R.drawable.hot_choose);
+                Drawable chooseIt = getResources().getDrawable(R.drawable.milk_c);
                 milk_shot.setBackground(chooseIt);
                 coffee.setExtra("Milk Shot");
                 extraPrice = 10;
@@ -54,7 +54,7 @@ public class ExtraActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 resetSelected();
-                Drawable chooseIt = getResources().getDrawable(R.drawable.hot_choose);
+                Drawable chooseIt = getResources().getDrawable(R.drawable.shot_c);
                 extra_shot.setBackground(chooseIt);
                 coffee.setExtra("Extra Shot");
                 extraPrice = 20;
@@ -66,7 +66,7 @@ public class ExtraActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 resetSelected();
-                Drawable chooseIt = getResources().getDrawable(R.drawable.hot_choose);
+                Drawable chooseIt = getResources().getDrawable(R.drawable.double_shot_c);
                 double_shot.setBackground(chooseIt);
                 coffee.setExtra("Double Shot");
                 extraPrice = 35;
@@ -80,10 +80,10 @@ public class ExtraActivity extends AppCompatActivity {
         ImageView milk_shot = findViewById(R.id.milk_shot);
         ImageView extra_shot = findViewById(R.id.extra_shot);
         ImageView double_shot = findViewById(R.id.double_shot);
-        wipcream.setBackground(getResources().getDrawable(R.drawable.hot));
-        milk_shot.setBackground(getResources().getDrawable(R.drawable.hot));
-        extra_shot.setBackground(getResources().getDrawable(R.drawable.hot));
-        double_shot.setBackground(getResources().getDrawable(R.drawable.hot));
+        wipcream.setBackground(getResources().getDrawable(R.drawable.whipcream));
+        milk_shot.setBackground(getResources().getDrawable(R.drawable.milk));
+        extra_shot.setBackground(getResources().getDrawable(R.drawable.shot));
+        double_shot.setBackground(getResources().getDrawable(R.drawable.double_shot));
     }
 
     public void btnNextClick(View view) {

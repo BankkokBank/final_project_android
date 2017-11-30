@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import kmitl.bank58070041.finalproject.lazycafe.controller.activity.TypeCoffeePage;
 import kmitl.bank58070041.finalproject.lazycafe.R;
@@ -28,8 +29,8 @@ public class HomeFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home,container,false);
-        Button btnGoCoffee = view.findViewById(R.id.buyCoffee);
-        btnGoCoffee.setOnClickListener(new View.OnClickListener() {
+        ImageView goCoffee = view.findViewById(R.id.goCoffee);
+        goCoffee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), TypeCoffeePage.class);
