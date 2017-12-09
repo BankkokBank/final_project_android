@@ -25,6 +25,7 @@ public class ExtraActivity extends AppCompatActivity {
         final ImageView milk_shot = findViewById(R.id.milk_shot);
         final ImageView extra_shot = findViewById(R.id.extra_shot);
         final ImageView double_shot = findViewById(R.id.double_shot);
+        coffee.setExtra("");
 
         wipcream.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,9 +95,6 @@ public class ExtraActivity extends AppCompatActivity {
         intent.putExtra("total", total+extraPrice);
         intent.putExtra("bill",bill+ " : " + coffee.getExtra());
         startActivity(intent);
-
-        Log.i("mytag", String.valueOf(total+extraPrice));
-        Log.i("mytag2",bill+ " : " + coffee.getExtra());
 
     }
 }

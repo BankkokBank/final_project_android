@@ -26,6 +26,7 @@ public class TypeCoffeePage extends AppCompatActivity {
         final ImageView blend = findViewById(R.id.blender);
         final ImageView ice = findViewById(R.id.ice);
         final ImageView hot = findViewById(R.id.hot);
+        coffee.setType("");
 
         blend.setOnClickListener(new View.OnClickListener() {
             @Override

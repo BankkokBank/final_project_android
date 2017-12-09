@@ -17,12 +17,13 @@
         android:layout_height="600dp"
         android:gravity="center"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
             android:padding="10dp"
-            android:text="Queue"
+            android:text="Type"
             android:textAlignment="center"
             android:textColor="#000"
             android:textSize="30dp" />

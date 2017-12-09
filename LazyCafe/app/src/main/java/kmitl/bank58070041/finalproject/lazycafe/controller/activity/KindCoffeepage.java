@@ -15,6 +15,7 @@ import kmitl.bank58070041.finalproject.lazycafe.model.Coffee;
 public class KindCoffeepage extends AppCompatActivity {
 
     final Coffee coffee = new Coffee();
+    private int kindCoffeePrice = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,7 @@ public class KindCoffeepage extends AppCompatActivity {
         final ImageView affogato = findViewById(R.id.affogato);
         final ImageView latte = findViewById(R.id.latte);
         final ImageView latte_macchiato = findViewById(R.id.latte_macchiato);
-
+        coffee.setKindCoffee("");
 
 
         espresso.setOnClickListener(new View.OnClickListener() {
@@ -39,6 +40,7 @@ public class KindCoffeepage extends AppCompatActivity {
                 Drawable chooseIt = getResources().getDrawable(R.drawable.espresso_c);
                 espresso.setBackground(chooseIt);
                 coffee.setKindCoffee("Espresso");
+                kindCoffeePrice = 20;
 
             }
         });
@@ -50,6 +52,7 @@ public class KindCoffeepage extends AppCompatActivity {
                 Drawable chooseIt = getResources().getDrawable(R.drawable.americano_c);
                 americano.setBackground(chooseIt);
                 coffee.setKindCoffee("Americano");
+                kindCoffeePrice = 20;
             }
         });
 
@@ -60,6 +63,7 @@ public class KindCoffeepage extends AppCompatActivity {
                 Drawable chooseIt = getResources().getDrawable(R.drawable.macchiato_c);
                 macchiato.setBackground(chooseIt);
                 coffee.setKindCoffee("Macchiato");
+                kindCoffeePrice = 20;
             }
         });
 
@@ -70,6 +74,7 @@ public class KindCoffeepage extends AppCompatActivity {
                 Drawable chooseIt = getResources().getDrawable(R.drawable.cappuccino_c);
                 cappuccino.setBackground(chooseIt);
                 coffee.setKindCoffee("Cappuccino");
+                kindCoffeePrice = 20;
             }
         });
 
@@ -80,6 +85,7 @@ public class KindCoffeepage extends AppCompatActivity {
                 Drawable chooseIt = getResources().getDrawable(R.drawable.flat_white_c);
                 flat_white.setBackground(chooseIt);
                 coffee.setKindCoffee("Flat White");
+                kindCoffeePrice = 20;
             }
         });
 
@@ -90,6 +96,7 @@ public class KindCoffeepage extends AppCompatActivity {
                 Drawable chooseIt = getResources().getDrawable(R.drawable.mocha_c);
                 mocha.setBackground(chooseIt);
                 coffee.setKindCoffee("Mocha");
+                kindCoffeePrice = 20;
 
 
             }
@@ -102,6 +109,7 @@ public class KindCoffeepage extends AppCompatActivity {
                 Drawable chooseIt = getResources().getDrawable(R.drawable.affogato_c);
                 affogato.setBackground(chooseIt);
                 coffee.setKindCoffee("Affogato");
+                kindCoffeePrice = 20;
 
             }
         });
@@ -113,6 +121,7 @@ public class KindCoffeepage extends AppCompatActivity {
                 Drawable chooseIt = getResources().getDrawable(R.drawable.latte_c);
                 latte.setBackground(chooseIt);
                 coffee.setKindCoffee("Latte");
+                kindCoffeePrice = 20;
             }
         });
 
@@ -123,6 +132,7 @@ public class KindCoffeepage extends AppCompatActivity {
                 Drawable chooseIt = getResources().getDrawable(R.drawable.latte_macchiato_c);
                 latte_macchiato.setBackground(chooseIt);
                 coffee.setKindCoffee("Latte Macchiato");
+                kindCoffeePrice = 20;
             }
         });
 
@@ -156,7 +166,7 @@ public class KindCoffeepage extends AppCompatActivity {
         Intent getIntent = getIntent();
         int total = getIntent.getIntExtra("total", 0);
         String bill = getIntent.getStringExtra("bill");
-        intent.putExtra("total", total+20);
+        intent.putExtra("total", total+kindCoffeePrice);
         intent.putExtra("bill", bill + " : " + coffee.getKindCoffee());
         startActivity(intent);
     }
